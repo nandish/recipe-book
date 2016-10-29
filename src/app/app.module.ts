@@ -8,7 +8,7 @@ import { HeaderComponent } from './header.component';
 import { RecipesComponent } from './recipes';
 import { RecipeListComponent, RecipeItemComponent } from './recipes/recipe-list';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
-    ShoppingListComponent
+
   ],
   imports: [
     BrowserModule,
