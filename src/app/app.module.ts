@@ -8,8 +8,8 @@ import { HeaderComponent } from './header.component';
 import { RecipesComponent } from './recipes';
 import { RecipeListComponent, RecipeItemComponent } from './recipes/recipe-list';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-
-
+import { ShoppingListComponent, ShoppingListAddComponent, ShoppingListService } from './shopping-list';
+import { DropdownDirective } from './dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,9 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
+    ShoppingListComponent,
+    ShoppingListAddComponent,
+    DropdownDirective,
 
   ],
   imports: [
@@ -26,7 +29,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ ShoppingListService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
